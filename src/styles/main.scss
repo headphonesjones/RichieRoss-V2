@@ -1,0 +1,388 @@
+$blotchColor: #fc9378;
+$lightGray: #e2e1db;
+$midGray: #bbbab7;
+$darkGray: #211f1f;
+$black: #000000;
+
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body{
+  overflow-x: hidden;
+  background-color: $lightGray;
+  padding: 0;
+  margin: 0;
+  font-family: "freight-sans-pro",sans-serif;
+  -webkit-transform-style: preserve-3d;
+  -webkit-overflow-scrolling: touch;
+}
+
+p{
+  color: $midGray;
+  font-size: 17px;
+  padding-right:40px;
+
+  @media (min-width: 550px) {
+    font-size:18px;
+  }
+
+  @media (min-width: 750px) {
+    font-size:20px;
+  }
+}
+
+.bold{
+  font-family: "freight-sans-pro",sans-serif;
+  font-weight: 700;
+}
+
+.hero{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s ease;
+
+  .heroLogo{
+    width: 20%;
+    height: auto;
+    @include centerer;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .heroDots{
+    position: absolute;
+    top: -100vh;
+    right: 50px;
+    width: 29%;
+    height: 100vh;
+    z-index: 4;
+  }
+
+  .heroBlotch{
+    width: 55%;
+    height: auto;
+    position: absolute;
+    top: 230%;
+    right: 100px;
+
+    z-index: 3;
+  }
+}
+
+.secondSection{
+  width: 100vw;
+  position: relative;
+  z-index: 2;
+
+  .blackBlotch{
+    width: 90%;
+    height: 800px;
+    background-color: $black;
+    position: relative;
+    top: -50px;
+    border: 15px solid transparent;
+    padding: 15px;
+    padding-top: 250px;
+    border-image-source: url("../images/black-edge-border.png");
+    border-image-repeat: stretch;
+    border-image-slice: 30;
+    border-image-outset: 15px;
+
+    //.darkTopBlotch{
+    //  background: url("../images/black-edge-top.png") repeat-x;
+    //  height: 50px;
+    //  position: relative;
+    //  top: -50px;
+    //}
+
+    p{
+      color: $midGray;
+    }
+  }
+
+  .richieImage{
+    position: relative;
+    width: 50%;
+  }
+}
+
+.imageHeadline{
+  width: 300px;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+
+.dots{
+  background-image: url("../images/dots.png");
+  background-repeat: repeat;
+}
+
+
+.thirdSection{
+  position: relative;
+  top: -50px;
+  z-index: 1;
+  background-color: $lightGray;
+
+  .mainGif{
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+  }
+}
+
+.artisinalStratContainer{
+  transition: top 2s linear;
+  display: block;
+}
+
+.artisinalStratContainer2{
+  display: block;
+  position: relative;
+}
+
+.third {
+  width: 100%;
+  position: relative;
+  padding-bottom:100px;
+  z-index:11;
+  transition: all 1s ease;
+
+  .secondBlotch{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    margin-top: 200px;
+  }
+
+  .twelve{
+    margin-top: 200px;
+  }
+
+  @media (min-width: 667px) {
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: 20%;
+    padding-bottom:240px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-bottom:360px;
+  }
+
+  .columns {
+    display:block !important;
+    opacity:1;
+    transition:opacity 1s ease;
+
+    &.hide {
+      opacity:0;
+    }
+  }
+
+  .smallLogo {
+    margin-top: 100px;
+    margin-bottom:0px;
+    position: relative;
+  }
+
+  p {
+    color:$black;
+    margin-bottom:0px;
+  }
+
+  .quote {
+    margin-top:24px;
+  }
+
+  .source {
+    padding-left:20px;
+    font-size:13px;
+
+    @media (min-width: 750px) {
+      font-size:15px;
+    }
+  }
+}
+
+
+.fourth {
+  padding-bottom:400px;
+  padding-top:80px;
+  position: relative;
+  z-index: 12;
+
+  @media (min-width: 750px) {
+    position: relative;
+    bottom: 130px;
+  }
+
+  .logoFg {
+    display:none;
+    opacity:0;
+    transition:opacity 1s ease;
+
+    &.show {
+      opacity:1;
+    }
+
+    &.is_stuck {
+      position:fixed !important;
+      top:200px !important;
+    }
+
+    @media (min-width: 750px) {
+      display:block;
+      width: 250px;
+      position: absolute;
+      left: 5%;
+      top: -20%;
+    }
+
+    @media (min-width: 1000px) {
+      left: 11%;
+    }
+
+    @media (min-width: 1200px) {
+      left:8%;
+    }
+  }
+
+  .dots {
+    display: none;
+
+    @media (min-width: 750px) {
+      background: url(/dist/images/dots.png);
+      display: block;
+      height: 20%;
+      width: 25%;
+      position: absolute;
+      left: 0;
+      z-index: 11;
+      top:18%;
+    }
+
+    @media (min-width: 1000px) {
+      width:26%;
+      height:40%;
+    }
+  }
+
+  .container {
+
+    @media (min-width: 750px) {
+      width: 70%;
+      left: 30%;
+      margin-left:0;
+    }
+  }
+
+  hr {
+    width:110%;
+    border-color:$black;
+  }
+
+  p {
+    color:$black;
+    margin-bottom:0px;
+  }
+
+  .last {
+    margin-top:24px;
+  }
+
+}
+
+
+.fifth {
+  text-align:center;
+  position: relative;
+  z-index: 10;
+  z-index: -1;
+  padding-bottom:240px;
+  padding-top:240px;
+
+  img {
+    position: relative;
+  }
+
+  .smallBlotchBg {
+    width:300px;
+    position:absolute;
+    left:31%;
+
+  }
+
+  .logoFg {
+    width:150px;
+
+    @media (min-width: 750px) {
+      display:none;
+    }
+  }
+
+  p {
+    padding-top: 0px;
+    position: relative;
+    top: -150px;
+    width: 100%;
+    color: $black;
+    margin-bottom:0px;
+    padding-bottom:120px;
+
+    @media (min-width: 750px) {
+      width: 70%;
+      left: 30%;
+      margin-left: 0;
+      text-align: left;
+      position:relative;
+    }
+  }
+
+  .bold {
+    padding-top:0px;
+
+    @media (min-width: 550px) {
+
+    }
+  }
+
+  a {
+    color:$black;
+    text-decoration:none;
+  }
+
+}
+
+footer {
+  background:$midGray;
+  z-index:10;
+  position:relative;
+  padding-bottom:80px;
+
+  .footerTopBlotch {
+    background: url("../images/gray-edge.png") repeat-x;
+    height: 50px;
+    position: relative;
+    top: -50px;
+    z-index:10;
+  }
+
+  p {
+    color:$black;
+    width:100%;
+    margin-bottom:0px;
+    text-align:center;
+    top: -30px;
+    position: relative;
+  }
+}
