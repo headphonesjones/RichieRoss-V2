@@ -30,6 +30,9 @@ p {
   height: 100vh;
   -webkit-transition: all 1s ease;
           transition: all 1s ease; }
+  @media (max-width: 400px) {
+    .hero {
+      height: 25vh; } }
   .hero .heroLogo {
     width: 20%;
     height: auto;
@@ -43,7 +46,9 @@ p {
     top: 40%; }
     @media (max-width: 400px) {
       .hero .heroLogo {
-        width: 50%; } }
+        width: 40%;
+        left: 75%;
+        top: 20%; } }
   .hero .heroDots {
     position: absolute;
     top: -100vh;
@@ -58,6 +63,10 @@ p {
     top: 230%;
     right: 100px;
     z-index: 3; }
+    @media (max-width: 400px) {
+      .hero .heroBlotch {
+        left: 54%;
+        width: 75%; } }
 
 .secondSection {
   width: 100vw;
@@ -77,17 +86,27 @@ p {
     border-image-repeat: stretch;
     border-image-slice: 30;
     border-image-outset: 15px; }
+    @media (max-width: 400px) {
+      .secondSection .blackBlotch {
+        width: 100%;
+        padding: 150px 0px; } }
     .secondSection .blackBlotch p {
       color: #bbbab7; }
   .secondSection .richieImage {
     position: relative;
     width: 50%; }
+    @media (max-width: 400px) {
+      .secondSection .richieImage {
+        width: 100%; } }
 
 .imageHeadline {
   width: 300px;
   display: block;
   margin-top: 50px;
   margin-bottom: 20px; }
+  @media (max-width: 400px) {
+    .imageHeadline {
+      width: 80%; } }
 
 .dots {
   background-image: url("../images/dots.png");
@@ -102,6 +121,10 @@ p {
     width: 80%;
     margin-left: 10%;
     height: auto; }
+    @media (max-width: 400px) {
+      .thirdSection .mainGif {
+        width: 100%;
+        margin-left: 0px; } }
 
 .artisinalStratContainer {
   -webkit-transition: top 2s linear;
@@ -125,6 +148,10 @@ p {
     left: 10px;
     display: block;
     margin-top: 200px; }
+    @media (max-width: 400px) {
+      .third .secondBlotch {
+        left: -100px;
+        margin-top: 0px; } }
   .third .twelve {
     margin-top: 200px; }
   @media (min-width: 667px) {
@@ -234,6 +261,9 @@ p {
     width: 300px;
     position: absolute;
     left: 31%; }
+    @media (max-width: 400px) {
+      .fifth .smallBlotchBg {
+        width: 150px; } }
   .fifth .logoFg {
     width: 150px; }
     @media (min-width: 750px) {
@@ -266,6 +296,9 @@ footer {
   position: relative;
   padding-bottom: 80px;
   margin-top: 425px; }
+  @media (max-width: 400px) {
+    footer {
+      margin-top: 130px; } }
   footer .footerTopBlotch {
     background: url("../images/gray-edge.png") repeat-x;
     height: 50px;
@@ -278,7 +311,13 @@ footer {
     margin-bottom: 0px;
     text-align: center;
     top: -30px;
-    position: relative; }
+    position: relative;
+    padding-bottom: 12px; }
+    @media (max-width: 400px) {
+      footer p {
+        width: 80%;
+        margin: auto;
+        padding-right: 0px; } }
   footer a {
     color: black; }
   footer .comments {
