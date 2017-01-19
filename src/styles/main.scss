@@ -12,6 +12,10 @@ $black: #000000;
   transform: translate(-50%, -50%);
 }
 
+html {
+  overflow-x:hidden;
+}
+
 body{
   overflow-x: hidden;
   background-color: $lightGray;
@@ -54,6 +58,11 @@ p{
     position: fixed;
     z-index: 1;
     top:40%;
+
+    @media (max-width: 400px) {
+      width:50%;
+    }
+
   }
 
   .heroDots{

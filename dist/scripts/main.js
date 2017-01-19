@@ -50,3 +50,4 @@ $window.scroll(function() {
         target.css('opacity', Math.sin(scrollPercent * (Math.PI/2.0)));
     }
 });
+
