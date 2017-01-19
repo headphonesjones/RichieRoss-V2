@@ -18,7 +18,7 @@ body{
   padding: 0;
   margin: 0;
   font-family: "freight-sans-pro",sans-serif;
-  -webkit-transform-style: preserve-3d;
+  //-webkit-transform-style: preserve-3d; This was causing the logo issues in Firefox
   -webkit-overflow-scrolling: touch;
 }
 
@@ -53,6 +53,7 @@ p{
     @include centerer;
     position: fixed;
     z-index: 1;
+    top:40%;
   }
 
   .heroDots{
@@ -86,7 +87,8 @@ p{
     background-color: $black;
     position: relative;
     top: -50px;
-    border: 15px solid transparent;
+    border-style:solid;
+    border-width:15px;
     padding: 15px;
     padding-top: 250px;
     border-image-source: url("../images/black-edge-border.png");
@@ -368,6 +370,7 @@ footer {
   z-index:10;
   position:relative;
   padding-bottom:80px;
+  margin-top:425px;
 
   .footerTopBlotch {
     background: url("../images/gray-edge.png") repeat-x;
@@ -384,5 +387,14 @@ footer {
     text-align:center;
     top: -30px;
     position: relative;
+  }
+
+  a {
+    color:black;
+  }
+  
+  .comments {
+    font-weight:bold;
+    text-decoration:none;
   }
 }
