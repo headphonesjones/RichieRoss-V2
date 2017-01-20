@@ -80,8 +80,8 @@ p{
     top: -100vh;
     right: 50px;
     width: 29%;
-    height: 100vh;
-    z-index: 4;
+    height: 101vh;
+    z-index: 5;
   }
 
   .heroBlotch{
@@ -103,6 +103,76 @@ p{
       width:55%;
       top:230%;
     }
+  }
+}
+.richieImage{
+  width: auto;
+  height: 900px;
+  position: absolute;
+  bottom: -900px;
+}
+
+/* FIRST SECTION */
+
+.first{
+  padding-bottom:80px;
+  background-color: $black;
+  position: relative;
+  top: 500px;
+  z-index: 3;
+
+  .artisinalStrat{
+
+    &.is_stuck{
+      position: fixed !important;
+      top: 0px !important;
+      width: 960px;
+    }
+  }
+
+  .darkTopBlotch{
+    background: url("../images/black-edge-top.png") repeat-x;
+    height: 50px;
+    position: relative;
+    top: -50px;
+  }
+
+  .container {
+    padding-top: 150px;
+    height: 900px;
+    position: relative;
+  }
+}
+
+.imageHeadline {
+  width: 200px;
+
+  @media (min-width: 550px) {
+    width:250px;
+  }
+}
+
+hr {
+  height: 1px;
+  border-top: 1px solid rgba(187,186,183,0.4);
+  margin: 1em 0;
+  width: 75%;
+
+  @media (min-width: 550px) {
+    width:120%;
+  }
+}
+
+.smallLogo{
+  width: 60px;
+  margin-top: 12px;
+
+  @media (min-width: 400px) {
+    width:80px;
+  }
+
+  @media (min-width: 550px) {
+    width:100px;
   }
 }
 
@@ -135,6 +205,7 @@ p{
   width: 100vw;
   position: relative;
   z-index: 2;
+
 
   .blackBlotch{
     width: 90%;
@@ -222,9 +293,17 @@ p{
 
 .thirdSection{
   position: relative;
-  top: -50px;
-  z-index: 1;
+  top: 500px;
+  z-index: 6;
   background-color: $lightGray;
+
+  .grayTopBlotch{
+    background: url("../images/gray-edge-2.png") repeat-x;
+    height: 50px;
+    position: relative;
+    top: -50px;
+    z-index:10;
+  }
 
   .mainGif{
     width: 80%;
@@ -258,9 +337,11 @@ p{
 .third {
   width: 100%;
   position: relative;
-  padding-bottom:100px;
+  top: 400px;
+  padding-bottom:400px;
   z-index:11;
   transition: all 1s ease;
+  background-color: $lightGray;
 
   @media (max-width: 550px) {
     //overflow:hidden;
@@ -279,19 +360,15 @@ p{
     }
   }
 
-  .twelve{
-    margin-top: 200px;
-  }
 
   @media (min-width: 667px) {
     background-size:contain;
     background-repeat:no-repeat;
     background-position: 20%;
-    padding-bottom:240px;
   }
 
   @media (min-width: 1200px) {
-    padding-bottom:360px;
+    //padding-bottom:1200px;
   }
 
   .columns {
@@ -335,12 +412,10 @@ p{
   padding-top:80px;
   position: relative;
   z-index: 12;
+  background-color: $lightGray;
 
-  @media (min-width: 550px) {
-    position: relative;
-    bottom: 130px;
-    padding-bottom: 0px;
-  }
+
+
   @media (max-width: 550px) {
     position: relative;
     top: 200px;
@@ -429,8 +504,10 @@ p{
   position: relative;
   z-index: 10;
   z-index: -1;
-  padding-bottom:240px;
   padding-top:240px;
+  padding-bottom: 240px;
+  position: relative;
+  top: 280px;
 
   img {
     position: relative;
