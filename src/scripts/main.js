@@ -1,6 +1,17 @@
 /**
  * Created by magicdrops on 1/11/2017.
  */
+
+$(document).ready(
+
+    function() {
+
+        $("html").niceScroll();
+
+    }
+
+);
+
 $.stellar({
     hideDistantElements: false,
     responsive: true
