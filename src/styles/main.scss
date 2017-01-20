@@ -13,11 +13,11 @@ $black: #000000;
 }
 
 html {
-  overflow-x:hidden;
+  //overflow-x:hidden;
 }
 
 body{
-  overflow-x: hidden;
+  //overflow-x: hidden;
   background-color: $lightGray;
   padding: 0;
   margin: 0;
@@ -487,6 +487,7 @@ footer {
     top: -30px;
     position: relative;
     padding-bottom:12px;
+    padding-right:0px;
 
 
     @media (max-width: 550px) {

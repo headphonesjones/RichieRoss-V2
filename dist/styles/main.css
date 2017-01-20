@@ -1,8 +1,4 @@
-html {
-  overflow-x: hidden; }
-
 body {
-  overflow-x: hidden;
   background-color: #e2e1db;
   padding: 0;
   margin: 0;
@@ -350,7 +346,8 @@ footer {
     text-align: center;
     top: -30px;
     position: relative;
-    padding-bottom: 12px; }
+    padding-bottom: 12px;
+    padding-right: 0px; }
     @media (max-width: 550px) {
       footer p {
         width: 80%;
