@@ -10,6 +10,14 @@ new WOW().init();
 
 $(".artisinalStratContainer").stick_in_parent({offset_top:150});
 
+$(".thirdSection").stick_in_parent()
+    .on("sticky_kit:stick", function(e) {
+        $(".mainGif").attr('src','/dist/images/cool-glasses.gif');
+    })
+    .on("sticky_kit:unstick", function(e) {
+        $(".mainGif").attr('src','/dist/images/first-frame.jpg');
+    });
+
 // if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
 // window.onmousewheel = document.onmousewheel = wheel;
 //
