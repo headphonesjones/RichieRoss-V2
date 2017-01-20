@@ -50,7 +50,7 @@ $window.scroll(function() {
     }
     else{
         $(".heroDots").show();
-        $(".mainGif").show();
+        $(".mainGif").fadeIn(300);
     }
     var target = $('.artisinalStratContainer');
     var container = $('.secondSection');
