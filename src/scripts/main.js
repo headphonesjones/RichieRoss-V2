@@ -19,56 +19,100 @@ $.stellar({
 
 new WOW().init();
 
-$(".artisinalStratContainer").stick_in_parent({offset_top:150});
 
-$(".thirdSection").stick_in_parent()
-    .on("sticky_kit:stick", function(e) {
-        $(".mainGif").attr('src','/dist/images/cool-glasses.gif');
-    })
-    .on("sticky_kit:unstick", function(e) {
-        $(".mainGif").attr('src','/dist/images/first-frame.jpg');
-    });
 
-// if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
-// window.onmousewheel = document.onmousewheel = wheel;
+// $(".blotchContainer").stick_in_parent({offset_top: -600})
+//     .on("sticky_kit:stick", function(e) {
+//         console.log("has stuck!", e.target);
+//     })
+//     .on("sticky_kit:unstick", function(e) {
+//         console.log("has unstuck!", e.target);
+//     });
 //
-// function wheel(event) {
-//     var delta = 0;
-//     if (event.wheelDelta) delta = event.wheelDelta / 120;
-//     else if (event.detail) delta = -event.detail / 3;
+// $(".thirdSection").stick_in_parent()
+//     .on("sticky_kit:stick", function(e) {
+//         $(".mainGif").attr('src','/dist/images/cool-glasses.gif');
+//     })
+//     .on("sticky_kit:unstick", function(e) {
+//         $(".mainGif").attr('src','/dist/images/first-frame.jpg');
+//     });
 //
-//     handle(delta);
-//     if (event.preventDefault) event.preventDefault();
-//     event.returnValue = false;
-// }
-//
-// function handle(delta) {
-//     var time = 900;
-//     var distance = 300;
-//
-//     $('html, body').stop().animate({
-//         scrollTop: $(window).scrollTop() - (distance * delta)
-//     }, time );
-// }
 
 var distance = $('.third').offset().top,
     $window = $(window);
 
-$window.scroll(function() {
-    if ( $window.scrollTop() >= distance ) {
-        $(".heroDots").hide();
-        $(".mainGif").fadeOut(300);
+var mobileWidth = 550;
+
+$(document).ready(function(){
+    if( $(window).width() <= mobileWidth ) {
+        // code
+        $(".richieImage").removeAttr("data-stellar-ratio");
+        $(".secondBlotch").removeAttr("data-stellar-ratio");
+        $(".allShapesContainer").removeAttr("data-stellar-ratio");
+        $(".testimonialsContainer").removeAttr("data-stellar-ratio");
+        $(".mainGif").attr('src','/dist/images/cool-glasses.gif');
     }
     else{
-        $(".heroDots").show();
-        $(".mainGif").fadeIn(300);
-    }
-    var target = $('.artisinalStratContainer');
-    var container = $('.secondSection');
-    var targetHeight = target.outerHeight() + 250;
-    var scrollPercent = (window.pageYOffset) / targetHeight;
-    if (scrollPercent >= 0) {
-        target.css('opacity', Math.sin(scrollPercent * (Math.PI/2.0)));
+        $(".artisinalStratContainer").stick_in_parent({offset_top:150});
+
+        $(".blotchContainer").stick_in_parent({offset_top: -600})
+            .on("sticky_kit:stick", function(e) {
+                console.log("has stuck!", e.target);
+            })
+            .on("sticky_kit:unstick", function(e) {
+                console.log("has unstuck!", e.target);
+            });
+
+        $(".thirdSection").stick_in_parent()
+            .on("sticky_kit:stick", function(e) {
+                $(".mainGif").attr('src','/dist/images/cool-glasses.gif');
+            })
+            .on("sticky_kit:unstick", function(e) {
+                $(".mainGif").attr('src','/dist/images/first-frame.jpg');
+            });
+
+        $window.scroll(function() {
+            if ( $window.scrollTop() >= distance - 1000 ) {
+                $(".blotchContainer").fadeOut(500);
+            }
+            else{
+                $(".blotchContainer").fadeIn(500);
+            }
+            if ( $window.scrollTop() >= distance ) {
+
+                $(".mainGif").fadeOut(300);
+            }
+            else{
+                $(".mainGif").fadeIn(300);
+            }
+            var target = $('.artisinalStratContainer');
+            var container = $('.secondSection');
+            var targetHeight = target.outerHeight() + 250;
+            var scrollPercent = (window.pageYOffset) / targetHeight;
+            if (scrollPercent >= 0) {
+                target.css('opacity', Math.sin(scrollPercent * (Math.PI/2.0)));
+            }
+        });
+
     }
 });
 
+
+
+$(window).resize(function() {
+    if( $(this).width() > mobileWidth ) {
+        // code
+        $(".richieImage").attr("data-stellar-ratio", "1.4");
+        $(".secondBlotch").attr("data-stellar-ratio", ".75");
+        $(".allShapesContainer").attr("data-stellar-ratio", "1");
+        (".testimonialsContainer").attr("data-stellar-ratio", "2");
+
+    }
+    else{
+        $(".richieImage").removeAttr("data-stellar-ratio");
+        $(".secondBlotch").removeAttr("data-stellar-ratio");
+        $(".allShapesContainer").removeAttr("data-stellar-ratio");
+        $(".testimonialsContainer").removeAttr("data-stellar-ratio");
+        $(".mainGif").attr('src','/dist/images/cool-glasses.gif');
+    }
+});

@@ -13,7 +13,8 @@ $black: #000000;
 }
 
 html, body {
-
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body{
@@ -105,6 +106,31 @@ p{
   }
 }
 
+.blotchContainer{
+  height: 500px;
+  position: absolute;
+  width: 100%;
+  top: 100vh;
+  z-index: 4;
+
+  &.is_stuck{
+    z-index: 4 !important;
+  }
+
+  .heroBlotch{
+    position: relative;
+    top: 0;
+    width: 50%;
+    height: auto;
+    z-index: 4;
+    left: 42%;
+
+    @media screen and (max-width: 550px){
+      display: none;
+    }
+  }
+}
+
 .secondSection{
   width: 100vw;
   position: relative;
@@ -128,6 +154,7 @@ p{
     @media (max-width: 550px) {
       border-left:0px;
       border-right:0px;
+      height: 400px;
     }
 
     @media (max-width: 750px) {
@@ -149,7 +176,8 @@ p{
 
   .richieImage{
     position: relative;
-    width: 50%;
+    width: 55%;
+    top: 200px;
 
     @media (max-width: 1050px) {
       width:70%;
@@ -157,8 +185,16 @@ p{
 
     @media (max-width: 550px) {
       width:100%;
-      top:-64px;
+      top: 0px;
     }
+  }
+
+  @media (max-width: 1050px) {
+
+  }
+
+  @media (max-width: 550px) {
+    top: 100px;
   }
 }
 
@@ -198,7 +234,13 @@ p{
     @media (max-width: 550px) {
       width:100%;
       margin-left:0px;
+      margin-top: 200px;
     }
+  }
+
+  @media (max-width: 550px) {
+    top: 40px;
+    padding-bottom: 100px;
   }
 }
 
@@ -221,7 +263,7 @@ p{
   transition: all 1s ease;
 
   @media (max-width: 550px) {
-    overflow:hidden;
+    //overflow:hidden;
   }
 
   .secondBlotch{
@@ -297,6 +339,12 @@ p{
   @media (min-width: 550px) {
     position: relative;
     bottom: 130px;
+    padding-bottom: 0px;
+  }
+  @media (max-width: 550px) {
+    position: relative;
+    top: 200px;
+    padding-bottom: 0px;
   }
 
   .logoFg {
@@ -405,6 +453,7 @@ p{
 
     @media (max-width: 550px) {
       width: 180px;
+      top: 310px;
     }
 
     @media (max-width: 400px) {

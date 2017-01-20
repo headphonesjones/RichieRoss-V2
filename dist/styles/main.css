@@ -1,3 +1,7 @@
+html, body {
+  width: 100vw;
+  overflow-x: hidden; }
+
 body {
   background-color: #e2e1db;
   padding: 0;
@@ -73,6 +77,25 @@ p {
         width: 55%;
         top: 230%; } }
 
+.blotchContainer {
+  height: 500px;
+  position: absolute;
+  width: 100%;
+  top: 100vh;
+  z-index: 4; }
+  .blotchContainer.is_stuck {
+    z-index: 4 !important; }
+  .blotchContainer .heroBlotch {
+    position: relative;
+    top: 0;
+    width: 50%;
+    height: auto;
+    z-index: 4;
+    left: 42%; }
+    @media screen and (max-width: 550px) {
+      .blotchContainer .heroBlotch {
+        display: none; } }
+
 .secondSection {
   width: 100vw;
   position: relative;
@@ -94,7 +117,8 @@ p {
     @media (max-width: 550px) {
       .secondSection .blackBlotch {
         border-left: 0px;
-        border-right: 0px; } }
+        border-right: 0px;
+        height: 400px; } }
     @media (max-width: 750px) {
       .secondSection .blackBlotch {
         width: 100%;
@@ -103,14 +127,18 @@ p {
       color: #bbbab7; }
   .secondSection .richieImage {
     position: relative;
-    width: 50%; }
+    width: 55%;
+    top: 200px; }
     @media (max-width: 1050px) {
       .secondSection .richieImage {
         width: 70%; } }
     @media (max-width: 550px) {
       .secondSection .richieImage {
         width: 100%;
-        top: -64px; } }
+        top: 0px; } }
+  @media (max-width: 550px) {
+    .secondSection {
+      top: 100px; } }
 
 .imageHeadline {
   width: 300px;
@@ -140,7 +168,12 @@ p {
     @media (max-width: 550px) {
       .thirdSection .mainGif {
         width: 100%;
-        margin-left: 0px; } }
+        margin-left: 0px;
+        margin-top: 200px; } }
+  @media (max-width: 550px) {
+    .thirdSection {
+      top: 40px;
+      padding-bottom: 100px; } }
 
 .artisinalStratContainer {
   -webkit-transition: top 2s linear;
@@ -158,9 +191,6 @@ p {
   z-index: 11;
   -webkit-transition: all 1s ease;
           transition: all 1s ease; }
-  @media (max-width: 550px) {
-    .third {
-      overflow: hidden; } }
   .third .secondBlotch {
     position: absolute;
     top: 10px;
@@ -213,7 +243,13 @@ p {
   @media (min-width: 550px) {
     .fourth {
       position: relative;
-      bottom: 130px; } }
+      bottom: 130px;
+      padding-bottom: 0px; } }
+  @media (max-width: 550px) {
+    .fourth {
+      position: relative;
+      top: 200px;
+      padding-bottom: 0px; } }
   .fourth .logoFg {
     display: none;
     opacity: 0;
@@ -290,7 +326,8 @@ p {
         width: 250px; } }
     @media (max-width: 550px) {
       .fifth .smallBlotchBg {
-        width: 180px; } }
+        width: 180px;
+        top: 310px; } }
     @media (max-width: 400px) {
       .fifth .smallBlotchBg {
         width: 150px; } }
