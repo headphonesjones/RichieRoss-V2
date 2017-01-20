@@ -12,12 +12,12 @@ $black: #000000;
   transform: translate(-50%, -50%);
 }
 
-html {
-  //overflow-x:hidden;
+html, body {
+  //overflow-x:hidden; ARRRRGGGGGGGHHHHH I don't know what the fix is here, but basically the mobile view gets completely broken when the body and HTML don't have overflow-x:hidden..BUT that causes a weird double scroll issue on the top area of the website! FUCK
+  //height:100%;
 }
 
 body{
-  //overflow-x: hidden;
   background-color: $lightGray;
   padding: 0;
   margin: 0;
