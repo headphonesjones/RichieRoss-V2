@@ -46,9 +46,11 @@ var distance = $('.third').offset().top,
 $window.scroll(function() {
     if ( $window.scrollTop() >= distance ) {
         $(".heroDots").hide();
+        $(".mainGif").fadeOut(300);
     }
     else{
         $(".heroDots").show();
+        $(".mainGif").show();
     }
     var target = $('.artisinalStratContainer');
     var container = $('.secondSection');
