@@ -18,10 +18,8 @@ $.stellar({
     responsive: true
 });
 
-new WOW().init();
-
-$(".artisinalStrat").stick_in_parent();
-$(".blotchContainer").stick_in_parent();
+$(".first").stick_in_parent();
+// $(".heroBlotch").stick_in_parent({offset_top: -100});
 
 $(window).scroll(function() {
     var target = $(".first");
@@ -32,7 +30,7 @@ $(window).scroll(function() {
 
 
     if(current >= targetFromTop){
-        $(".artisinalStrat").css('opacity', Math.sin(scrollPercent * (Math.PI/2.0)));
+        // $(".artisinalStrat").css('opacity', Math.sin(scrollPercent * (Math.PI/2.0)));
     }
 
 });

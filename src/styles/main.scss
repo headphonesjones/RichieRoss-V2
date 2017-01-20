@@ -109,7 +109,7 @@ p{
   width: auto;
   height: 900px;
   position: absolute;
-  bottom: -900px;
+  bottom: -1200px;
 }
 
 /* FIRST SECTION */
@@ -120,6 +120,7 @@ p{
   position: relative;
   top: 500px;
   z-index: 3;
+  height: 1000px;
 
   .artisinalStrat{
 
@@ -293,7 +294,7 @@ hr {
 
 .thirdSection{
   position: relative;
-  top: 500px;
+  top: -800px;
   z-index: 6;
   background-color: $lightGray;
 
@@ -337,6 +338,7 @@ hr {
 .third {
   width: 100%;
   position: relative;
+  top: -50px;
   top: 400px;
   padding-bottom:400px;
   z-index:11;

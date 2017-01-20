@@ -81,7 +81,7 @@ p {
   width: auto;
   height: 900px;
   position: absolute;
-  bottom: -900px; }
+  bottom: -1200px; }
 
 /* FIRST SECTION */
 .first {
@@ -89,7 +89,8 @@ p {
   background-color: #000000;
   position: relative;
   top: 500px;
-  z-index: 3; }
+  z-index: 3;
+  height: 1000px; }
   .first .artisinalStrat.is_stuck {
     position: fixed !important;
     top: 0px !important;
@@ -210,7 +211,7 @@ hr {
 
 .thirdSection {
   position: relative;
-  top: 500px;
+  top: -800px;
   z-index: 6;
   background-color: #e2e1db; }
   .thirdSection .grayTopBlotch {
@@ -245,6 +246,7 @@ hr {
 .third {
   width: 100%;
   position: relative;
+  top: -50px;
   top: 400px;
   padding-bottom: 400px;
   z-index: 11;
