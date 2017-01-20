@@ -13,7 +13,7 @@ p {
   color: #bbbab7;
   font-size: 17px;
   padding-right: 40px; }
-  @media (min-width: 550px) {
+  @media (min-width: 400px) {
     p {
       font-size: 18px; } }
   @media (min-width: 750px) {
@@ -30,7 +30,7 @@ p {
   height: 100vh;
   -webkit-transition: all 1s ease;
           transition: all 1s ease; }
-  @media (max-width: 400px) {
+  @media (max-width: 550px) {
     .hero {
       height: 25vh; } }
   .hero .heroLogo {
@@ -44,10 +44,13 @@ p {
     position: fixed;
     z-index: 1;
     top: 40%; }
-    @media (max-width: 400px) {
+    @media (max-width: 1050px) {
+      .hero .heroLogo {
+        width: 30%; } }
+    @media (max-width: 550px) {
       .hero .heroLogo {
         width: 40%;
-        left: 75%;
+        left: 63%;
         top: 20%; } }
   .hero .heroDots {
     position: absolute;
@@ -63,9 +66,9 @@ p {
     top: 230%;
     right: 100px;
     z-index: 3; }
-    @media (max-width: 400px) {
+    @media (max-width: 550px) {
       .hero .heroBlotch {
-        left: 54%;
+        left: 45%;
         width: 75%; } }
 
 .secondSection {
@@ -86,7 +89,7 @@ p {
     border-image-repeat: stretch;
     border-image-slice: 30;
     border-image-outset: 15px; }
-    @media (max-width: 400px) {
+    @media (max-width: 750px) {
       .secondSection .blackBlotch {
         width: 100%;
         padding: 150px 0px; } }
@@ -95,7 +98,10 @@ p {
   .secondSection .richieImage {
     position: relative;
     width: 50%; }
-    @media (max-width: 400px) {
+    @media (max-width: 1050px) {
+      .secondSection .richieImage {
+        width: 70%; } }
+    @media (max-width: 550px) {
       .secondSection .richieImage {
         width: 100%; } }
 
@@ -104,6 +110,9 @@ p {
   display: block;
   margin-top: 50px;
   margin-bottom: 20px; }
+  @media (max-width: 550px) {
+    .imageHeadline {
+      width: 70%; } }
   @media (max-width: 400px) {
     .imageHeadline {
       width: 80%; } }
@@ -121,7 +130,7 @@ p {
     width: 80%;
     margin-left: 10%;
     height: auto; }
-    @media (max-width: 400px) {
+    @media (max-width: 550px) {
       .thirdSection .mainGif {
         width: 100%;
         margin-left: 0px; } }
@@ -148,7 +157,7 @@ p {
     left: 10px;
     display: block;
     margin-top: 200px; }
-    @media (max-width: 400px) {
+    @media (max-width: 550px) {
       .third .secondBlotch {
         left: -100px;
         margin-top: 0px; } }
@@ -182,16 +191,16 @@ p {
   .third .source {
     padding-left: 20px;
     font-size: 13px; }
-    @media (min-width: 750px) {
+    @media (min-width: 550px) {
       .third .source {
         font-size: 15px; } }
 
 .fourth {
-  padding-bottom: 400px;
+  padding-bottom: 750px;
   padding-top: 80px;
   position: relative;
   z-index: 12; }
-  @media (min-width: 750px) {
+  @media (min-width: 550px) {
     .fourth {
       position: relative;
       bottom: 130px; } }
@@ -205,14 +214,14 @@ p {
     .fourth .logoFg.is_stuck {
       position: fixed !important;
       top: 200px !important; }
-    @media (min-width: 750px) {
+    @media (min-width: 550px) {
       .fourth .logoFg {
         display: block;
         width: 250px;
         position: absolute;
         left: 5%;
         top: -20%; } }
-    @media (min-width: 1000px) {
+    @media (min-width: 1050px) {
       .fourth .logoFg {
         left: 11%; } }
     @media (min-width: 1200px) {
@@ -220,7 +229,7 @@ p {
         left: 8%; } }
   .fourth .dots {
     display: none; }
-    @media (min-width: 750px) {
+    @media (min-width: 550px) {
       .fourth .dots {
         background: url(/dist/images/dots.png);
         display: block;
@@ -230,11 +239,11 @@ p {
         left: 0;
         z-index: 11;
         top: 18%; } }
-    @media (min-width: 1000px) {
+    @media (min-width: 1050px) {
       .fourth .dots {
         width: 26%;
         height: 40%; } }
-  @media (min-width: 750px) {
+  @media (min-width: 550px) {
     .fourth .container {
       width: 70%;
       left: 30%;
@@ -261,12 +270,23 @@ p {
     width: 300px;
     position: absolute;
     left: 31%; }
+    @media (max-width: 1050px) {
+      .fifth .smallBlotchBg {
+        width: 320px;
+        left: 23%; } }
+    @media (max-width: 1000px) {
+      .fifth .smallBlotchBg {
+        left: 21%;
+        width: 250px; } }
+    @media (max-width: 550px) {
+      .fifth .smallBlotchBg {
+        width: 180px; } }
     @media (max-width: 400px) {
       .fifth .smallBlotchBg {
         width: 150px; } }
   .fifth .logoFg {
     width: 150px; }
-    @media (min-width: 750px) {
+    @media (min-width: 550px) {
       .fifth .logoFg {
         display: none; } }
   .fifth p {
@@ -277,7 +297,7 @@ p {
     color: #000000;
     margin-bottom: 0px;
     padding-bottom: 120px; }
-    @media (min-width: 750px) {
+    @media (min-width: 550px) {
       .fifth p {
         width: 70%;
         left: 30%;
@@ -296,9 +316,27 @@ footer {
   position: relative;
   padding-bottom: 80px;
   margin-top: 425px; }
+  @media (max-width: 1280px) {
+    footer {
+      margin-top: 350px; } }
+  @media (max-width: 1050px) {
+    footer {
+      margin-top: 700px; } }
+  @media (max-width: 1000px) {
+    footer {
+      margin-top: 425px; } }
+  @media (max-width: 550px) {
+    footer {
+      margin-top: 300px; } }
   @media (max-width: 400px) {
     footer {
       margin-top: 130px; } }
+  @media (max-width: 375px) {
+    footer {
+      margin-top: 220px; } }
+  @media (max-width: 320px) {
+    footer {
+      margin-top: 140px; } }
   footer .footerTopBlotch {
     background: url("../images/gray-edge.png") repeat-x;
     height: 50px;
@@ -313,7 +351,7 @@ footer {
     top: -30px;
     position: relative;
     padding-bottom: 12px; }
-    @media (max-width: 400px) {
+    @media (max-width: 550px) {
       footer p {
         width: 80%;
         margin: auto;
