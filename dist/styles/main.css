@@ -1,6 +1,3 @@
-html, body {
-  overflow-x: hidden; }
-
 body {
   background-color: #e2e1db;
   padding: 0;
@@ -69,7 +66,7 @@ p {
       .hero .heroBlotch {
         left: 40%;
         width: 55%;
-        top: 135%; } }
+        top: 180%; } }
     @media (max-width: 550px) {
       .hero .heroBlotch {
         left: 45%;

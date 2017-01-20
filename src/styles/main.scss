@@ -15,7 +15,7 @@ $black: #000000;
 html, body {
   //overflow-x:hidden; ARRRRGGGGGGGHHHHH I don't know what the fix is here, but basically the mobile view gets completely broken when the body and HTML don't have overflow-x:hidden..BUT that causes a weird double scroll issue on the top area of the website! FUCK
   //height:100%;
-  overflow-x:hidden;
+  //overflow-x:hidden;
 }
 
 body{
@@ -96,7 +96,7 @@ p{
     @media (max-width: 1050px) {
       left: 40%;
       width: 55%;
-      top: 135%;
+      top: 180%;
     }
 
     @media (max-width: 550px) {
