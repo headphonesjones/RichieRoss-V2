@@ -8,7 +8,7 @@ $.stellar({
 
 new WOW().init();
 
-$(".artisinalStratContainer").stick_in_parent();
+$(".artisinalStratContainer").stick_in_parent({offset_top:150});
 
 // if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
 // window.onmousewheel = document.onmousewheel = wheel;
@@ -44,7 +44,7 @@ $window.scroll(function() {
     }
     var target = $('.artisinalStratContainer');
     var container = $('.secondSection');
-    var targetHeight = target.outerHeight() + 100;
+    var targetHeight = target.outerHeight() + 250;
     var scrollPercent = (window.pageYOffset) / targetHeight;
     if (scrollPercent >= 0) {
         target.css('opacity', Math.sin(scrollPercent * (Math.PI/2.0)));
