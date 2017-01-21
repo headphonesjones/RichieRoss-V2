@@ -12,63 +12,111 @@ $(document).ready(
 
 );
 
-$.stellar({
-    hideDistantElements: false,
-    responsive: true
+
+
+var mobileWidth = 768;
+
+$(document).ready(function(){
+    if( $(window).width() <= mobileWidth ) {
+        // code
+        $(".richieImage").removeAttr("data-stellar-ratio");
+        $(".secondBlotch").removeAttr("data-stellar-ratio");
+        $(".heroDots").removeAttr("data-stellar-ratio");
+        $(".heroBlotch").removeAttr("data-stellar-ratio");
+        $(".third .container").removeAttr("data-stellar-ratio");
+        $(".fourth .container").removeAttr("data-stellar-ratio");
+        $(".mainGif").attr('src','/dist/images/cool-glasses.gif');
+    }
+    else{
+        $.stellar({
+            hideDistantElements: false,
+            responsive: true
+        });
+
+        new WOW().init();
+
+        $(".artisinalStratContainer").stick_in_parent({offset_top:200})
+            .on("sticky_kit:unstick", function(e) {
+            // $(".heroBlotch").removeClass('blotchStick');
+        });
+
+        $(".thirdSection").stick_in_parent()
+            .on("sticky_kit:stick", function(e) {
+                $(".mainGif").attr('src','/dist/images/cool-glasses.gif');
+            })
+            .on("sticky_kit:unstick", function(e) {
+                $(".mainGif").attr('src','/dist/images/first-frame.jpg');
+            });
+    }
 });
 
-new WOW().init();
 
-$(".artisinalStratContainer").stick_in_parent({offset_top:150});
 
-$(".thirdSection").stick_in_parent()
-    .on("sticky_kit:stick", function(e) {
+$(window).resize(function() {
+    if( $(this).width() > mobileWidth ) {
+        // code
+        $(".richieImage").attr("data-stellar-ratio", "1.4");
+        $(".secondBlotch").attr("data-stellar-ratio", ".75");
+        $(".heroDots").attr("data-stellar-ratio", "-1");
+        $(".heroBlotch").attr("data-stellar-ratio", "2");
+        $(".third .container").attr("data-stellar-ratio", "1.2");
+        $(".fourth .container").attr("data-stellar-ratio", "1");
+
+    }
+    else{
+        $(".richieImage").removeAttr("data-stellar-ratio");
+        $(".secondBlotch").removeAttr("data-stellar-ratio");
+        $(".heroDots").removeAttr("data-stellar-ratio");
+        $(".heroBlotch").removeAttr("data-stellar-ratio");
+        $(".third .container").removeAttr("data-stellar-ratio");
+        $(".fourth .container").removeAttr("data-stellar-ratio");
         $(".mainGif").attr('src','/dist/images/cool-glasses.gif');
-    })
-    .on("sticky_kit:unstick", function(e) {
-        $(".mainGif").attr('src','/dist/images/first-frame.jpg');
-    });
+    }
+});
 
-// if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
-// window.onmousewheel = document.onmousewheel = wheel;
-//
-// function wheel(event) {
-//     var delta = 0;
-//     if (event.wheelDelta) delta = event.wheelDelta / 120;
-//     else if (event.detail) delta = -event.detail / 3;
-//
-//     handle(delta);
-//     if (event.preventDefault) event.preventDefault();
-//     event.returnValue = false;
-// }
-//
-// function handle(delta) {
-//     var time = 900;
-//     var distance = 300;
-//
-//     $('html, body').stop().animate({
-//         scrollTop: $(window).scrollTop() - (distance * delta)
-//     }, time );
-// }
 
-var distance = $('.third').offset().top,
-    $window = $(window);
+var scroll = function () {
+    var distance = $('.third').offset().top,
+        $window = $(window);
 
-$window.scroll(function() {
-    if ( $window.scrollTop() >= distance ) {
-        $(".heroDots").hide();
+    if ( $(window).scrollTop() >= distance + 650 ) {
         $(".mainGif").fadeOut(300);
     }
     else{
-        $(".heroDots").show();
         $(".mainGif").fadeIn(300);
+    }
+    if ( $(window).scrollTop() >= distance ) {
+        $(".heroDots").hide();
+    }
+    else{
+        $(".heroDots").show();
     }
     var target = $('.artisinalStratContainer');
     var container = $('.secondSection');
-    var targetHeight = target.outerHeight() + 250;
+    var targetHeight = target.outerHeight() + 90;
     var scrollPercent = (window.pageYOffset) / targetHeight;
+
+    var blotch = $('.heroBlotch');
+    var blotchOffset = blotch.offset().top;
+
     if (scrollPercent >= 0) {
         target.css('opacity', Math.sin(scrollPercent * (Math.PI/2.0)));
     }
-});
 
+    // if (blotchOffset <= 660){
+    //     blotch.addClass('blotchStick');
+    // }
+};
+var waiting = false;
+$(window).scroll(function () {
+    if (waiting) {
+        return;
+    }
+    waiting = true;
+
+    scroll();
+
+    setTimeout(function () {
+        waiting = false;
+    }, 200);
+});
