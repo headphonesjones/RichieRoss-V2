@@ -1,42 +1,18 @@
 body {
   background-color: #e2e1db;
-  height: 4000px; }
+  height: 4000px;
+  font-family: "freight-sans-pro",sans-serif; }
 
-.content {
-  height: 3000px; }
-
-.wrapper {
-  position: fixed; }
-
-.wrapper .box {
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  line-height: 100px;
-  text-align: center;
-  font-size: 25px;
-  color: #fff;
-  background: #ff8330; }
-
-.wrapper .box:nth-of-type(2) {
-  left: 100px;
-  background: #E01B5D; }
-
-.wrapper .box:nth-of-type(3) {
-  left: 200px;
-  background: #30FFFF; }
-
-.wrapper .box:nth-of-type(4) {
-  left: 300px;
-  background: #B3FF30; }
-
-.wrapper .box:nth-of-type(5) {
-  left: 400px;
-  background: #308AFF; }
-
-.wrapper .box:nth-of-type(6) {
-  left: 500px;
-  background: #1BE059; }
+p {
+  color: #bbbab7;
+  font-size: 17px;
+  padding-right: 40px; }
+  @media (min-width: 550px) {
+    p {
+      font-size: 18px; } }
+  @media (min-width: 750px) {
+    p {
+      font-size: 20px; } }
 
 .logoContainer {
   width: 100%;
@@ -56,17 +32,17 @@ body {
     position: absolute;
     right: 100px;
     top: -100vh;
-    width: 300px;
+    width: 420px;
     height: 100vh; }
 
 .dots {
   background: url("/dist/images/dots.png") repeat; }
 
 .heroBlotch {
-  width: 50%;
+  width: 60%;
   height: auto;
   position: absolute;
-  bottom: -100vh;
+  top: -800px;
   right: 100px;
   z-index: 4; }
 
@@ -75,9 +51,50 @@ body {
   background-color: #000000;
   height: 500px;
   position: relative;
-  top: 110vh; }
+  top: 220vh;
+  height: 1000px; }
   .first .darkTopBlotch {
     background: url("../images/black-edge-top.png") repeat-x;
     height: 50px;
     position: relative;
     top: -50px; }
+  .first p {
+    color: #e2e1db; }
+
+.richieImage {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  bottom: -105vh; }
+
+.strategyText {
+  padding-top: 300px; }
+
+.imageHeadline {
+  width: 220px;
+  display: block;
+  margin-bottom: 20px; }
+
+/* SECOND SECTION */
+.second {
+  text-align: center;
+  background-color: #e2e1db;
+  z-index: 10;
+  position: relative;
+  top: 240vh; }
+  .second .grayTopBlotch {
+    background: url("../images/gray-edge-2.png") repeat-x;
+    height: 50px;
+    position: relative;
+    top: -50px;
+    z-index: 10; }
+  .second .coolGlasses {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 150px;
+    max-width: 650px;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease;
+            transition: opacity 1s ease; }
+    .second .coolGlasses.hide {
+      opacity: 0; }
