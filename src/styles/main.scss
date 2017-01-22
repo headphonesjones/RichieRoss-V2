@@ -165,7 +165,7 @@ p{
 }
 
 .imageHeadline{
-  width: 300px;
+  width: 250px;
   display: block;
   margin-top: 50px;
   margin-bottom: 20px;
@@ -508,7 +508,7 @@ footer {
     background: url("../images/gray-edge.png") repeat-x;
     height: 50px;
     position: relative;
-    top: -50px;
+    top: -45px;
     z-index:10;
   }
 
@@ -517,9 +517,8 @@ footer {
     width:100%;
     margin-bottom:0px;
     text-align:center;
-    top: -30px;
     position: relative;
-    padding-bottom:12px;
+    top: 0px;
     padding-right:0px;
 
 
@@ -536,6 +535,8 @@ footer {
   
   .comments {
     font-weight:bold;
+    position: relative;
+    top: -5px;
     text-decoration:none;
   }
 }

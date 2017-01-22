@@ -40,6 +40,7 @@ $(document).ready(function(){
             // $(".heroBlotch").removeClass('blotchStick');
         });
 
+
         $(".thirdSection").stick_in_parent()
             .on("sticky_kit:stick", function(e) {
                 $(".mainGif").attr('src','/dist/images/cool-glasses.gif');
@@ -93,7 +94,7 @@ var scroll = function () {
     }
     var target = $('.artisinalStratContainer');
     var container = $('.secondSection');
-    var targetHeight = target.outerHeight() + 90;
+    var targetHeight = target.outerHeight() + 30;
     var scrollPercent = (window.pageYOffset) / targetHeight;
 
     var blotch = $('.heroBlotch');
