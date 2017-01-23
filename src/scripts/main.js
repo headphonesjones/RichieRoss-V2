@@ -48,6 +48,20 @@ $(document).ready(function(){
             .on("sticky_kit:unstick", function(e) {
                 $(".mainGif").attr('src','/dist/images/first-frame.jpg');
             });
+
+        var waiting = false;
+        $(window).scroll(function () {
+            if (waiting) {
+                return;
+            }
+            waiting = true;
+
+            scroll();
+
+            setTimeout(function () {
+                waiting = false;
+            }, 200);
+        });
     }
 });
 
@@ -62,6 +76,20 @@ $(window).resize(function() {
         $(".heroBlotch").attr("data-stellar-ratio", "2");
         $(".third .container").attr("data-stellar-ratio", "1.2");
         $(".fourth .container").attr("data-stellar-ratio", "1");
+
+        var waiting = false;
+        $(window).scroll(function () {
+            if (waiting) {
+                return;
+            }
+            waiting = true;
+
+            scroll();
+
+            setTimeout(function () {
+                waiting = false;
+            }, 200);
+        });
 
     }
     else{
@@ -108,16 +136,3 @@ var scroll = function () {
     //     blotch.addClass('blotchStick');
     // }
 };
-var waiting = false;
-$(window).scroll(function () {
-    if (waiting) {
-        return;
-    }
-    waiting = true;
-
-    scroll();
-
-    setTimeout(function () {
-        waiting = false;
-    }, 200);
-});
