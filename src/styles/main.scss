@@ -178,7 +178,7 @@ p{
       background: url("../images/black-edge-top.png") repeat-x;
       height: 50px;
       position: relative;
-      top: -50px;
+      top: -49px;
 
       @media (max-width: 780px) {
         top:-150px;
@@ -253,11 +253,15 @@ p{
   z-index: 3;
   background-color: $lightGray;
 
+  @media (max-width: 780px) {
+    margin-bottom:-80px;
+  }
+
   .grayTopBlotch{
     background: url("../images/gray-edge-2.png") repeat-x;
     height: 50px;
     position: relative;
-    top: -50px;
+    top: -49px;
     z-index:10;
   }
 
@@ -617,7 +621,8 @@ footer {
   }
 
   @media (max-width: 740px) {
-    margin-top:300px;
+    margin-top:160px;
+    padding-bottom:0px;
   }
 
   @media (max-width: 550px) {
@@ -661,6 +666,9 @@ footer {
       font-size:15px;
     }
 
+    @media (max-width: 740px) {
+      top:-20px;
+    }
 
     @media (max-width: 550px) {
       width: 80%;

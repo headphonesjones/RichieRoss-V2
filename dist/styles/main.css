@@ -128,7 +128,7 @@ p {
       background: url("../images/black-edge-top.png") repeat-x;
       height: 50px;
       position: relative;
-      top: -50px; }
+      top: -49px; }
       @media (max-width: 780px) {
         .secondSection .blackBlotch .darkTopBlotch {
           top: -150px; } }
@@ -181,11 +181,14 @@ p {
   top: -50px;
   z-index: 3;
   background-color: #e2e1db; }
+  @media (max-width: 780px) {
+    .thirdSection {
+      margin-bottom: -80px; } }
   .thirdSection .grayTopBlotch {
     background: url("../images/gray-edge-2.png") repeat-x;
     height: 50px;
     position: relative;
-    top: -50px;
+    top: -49px;
     z-index: 10; }
   .thirdSection .mainGif {
     width: 80%;
@@ -444,7 +447,8 @@ footer {
       margin-top: 600px; } }
   @media (max-width: 740px) {
     footer {
-      margin-top: 300px; } }
+      margin-top: 160px;
+      padding-bottom: 0px; } }
   @media (max-width: 550px) {
     footer {
       margin-top: 300px; } }
@@ -478,6 +482,9 @@ footer {
         margin: auto;
         padding-right: 0px;
         font-size: 15px; } }
+    @media (max-width: 740px) {
+      footer p {
+        top: -20px; } }
     @media (max-width: 550px) {
       footer p {
         width: 80%;
