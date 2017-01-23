@@ -26,6 +26,9 @@ p {
   height: 100vh;
   -webkit-transition: all 1s ease;
           transition: all 1s ease; }
+  @media (max-width: 780px) {
+    .hero {
+      height: 25vh; } }
   @media (max-width: 550px) {
     .hero {
       height: 25vh; } }
@@ -43,10 +46,15 @@ p {
     @media (max-width: 1050px) {
       .hero .heroLogo {
         width: 30%; } }
+    @media (max-width: 780px) {
+      .hero .heroLogo {
+        width: 33%;
+        left: 67%;
+        top: 20%; } }
     @media (max-width: 550px) {
       .hero .heroLogo {
         width: 40%;
-        left: 63%;
+        left: 65%;
         top: 20%; } }
   .hero .heroDots {
     position: absolute;
@@ -67,6 +75,11 @@ p {
         left: 40%;
         width: 55%;
         top: 180%; } }
+    @media (max-width: 780px) {
+      .hero .heroBlotch {
+        left: 50%;
+        width: 50%;
+        top: 230%; } }
     @media (max-width: 550px) {
       .hero .heroBlotch {
         left: 45%;
@@ -86,19 +99,34 @@ p {
     background-color: #000000;
     position: relative;
     top: -50px; }
-    @media (max-width: 550px) {
+    @media (max-width: 780px) {
       .secondSection .blackBlotch {
         border-left: 0px;
-        border-right: 0px; } }
+        border-right: 0px;
+        height: 550px;
+        padding-top: 100px;
+        padding-bottom: 40px; } }
     @media (max-width: 750px) {
       .secondSection .blackBlotch {
         width: 100%;
         padding: 150px 0px; } }
+    @media (max-width: 550px) {
+      .secondSection .blackBlotch {
+        border-left: 0px;
+        border-right: 0px;
+        padding: 40px 0px;
+        height: 550px; } }
     .secondSection .blackBlotch .darkTopBlotch {
       background: url("../images/black-edge-top.png") repeat-x;
       height: 50px;
       position: relative;
       top: -50px; }
+      @media (max-width: 780px) {
+        .secondSection .blackBlotch .darkTopBlotch {
+          top: -150px; } }
+      @media (max-width: 550px) {
+        .secondSection .blackBlotch .darkTopBlotch {
+          top: -90px; } }
     .secondSection .blackBlotch p {
       color: #bbbab7; }
   .secondSection .richieImage {
@@ -107,6 +135,9 @@ p {
     @media (max-width: 1050px) {
       .secondSection .richieImage {
         width: 70%; } }
+    @media (max-width: 780px) {
+      .secondSection .richieImage {
+        width: 80%; } }
     @media (max-width: 550px) {
       .secondSection .richieImage {
         width: 100%; } }
@@ -116,6 +147,10 @@ p {
   display: block;
   margin-top: 50px;
   margin-bottom: 20px; }
+  @media (max-width: 780px) {
+    .imageHeadline {
+      width: 70%;
+      width: 40%; } }
   @media (max-width: 550px) {
     .imageHeadline {
       width: 70%; } }
@@ -142,6 +177,10 @@ p {
     width: 80%;
     margin-left: 10%;
     height: auto; }
+    @media (max-width: 780px) {
+      .thirdSection .mainGif {
+        width: 100%;
+        margin-left: 0px; } }
     @media (max-width: 550px) {
       .thirdSection .mainGif {
         width: 100%;
@@ -163,21 +202,6 @@ p {
   z-index: 11;
   -webkit-transition: all 1s ease;
           transition: all 1s ease; }
-  @media (max-width: 550px) {
-    .third {
-      overflow: hidden; } }
-  .third .secondBlotch {
-    position: absolute;
-    top: 200px;
-    left: 10px;
-    display: block;
-    margin-top: 100px; }
-    @media (max-width: 550px) {
-      .third .secondBlotch {
-        left: -100px;
-        margin-top: 0px; } }
-  .third .twelve {
-    margin-top: 500px; }
   @media (min-width: 667px) {
     .third {
       background-size: contain;
@@ -187,6 +211,39 @@ p {
   @media (min-width: 1200px) {
     .third {
       padding-bottom: 360px; } }
+  @media (max-width: 780px) {
+    .third {
+      overflow: hidden;
+      padding-bottom: 370px; } }
+  @media (max-width: 550px) {
+    .third {
+      overflow: hidden; } }
+  .third .secondBlotch {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    display: block;
+    margin-top: 100px; }
+    @media (max-width: 780px) {
+      .third .secondBlotch {
+        left: 0px;
+        margin-top: 0px;
+        top: 0px;
+        height: 790px; } }
+    @media (max-width: 550px) {
+      .third .secondBlotch {
+        left: -100px;
+        margin-top: 0px;
+        top: 0px;
+        height: 600px; } }
+  .third .twelve {
+    margin-top: 500px; }
+    @media (max-width: 780px) {
+      .third .twelve {
+        margin-top: 40px; } }
+    @media (max-width: 550px) {
+      .third .twelve {
+        margin-top: 40px; } }
   .third .columns {
     display: block !important;
     opacity: 1;
@@ -219,6 +276,13 @@ p {
     .fourth {
       position: relative;
       bottom: 130px; } }
+  @media (max-width: 780px) {
+    .fourth {
+      padding-top: 0px;
+      bottom: 0px; } }
+  @media (max-width: 550px) {
+    .fourth {
+      padding-top: 0px; } }
   .fourth .logoFg {
     display: none;
     opacity: 0;
@@ -263,6 +327,11 @@ p {
       width: 70%;
       left: 30%;
       margin-left: 0; } }
+  @media (max-width: 780px) {
+    .fourth .container {
+      width: 80%;
+      left: 0%;
+      margin: auto; } }
   .fourth hr {
     width: 110%;
     border-color: #000000; }
@@ -293,6 +362,10 @@ p {
       .fifth .smallBlotchBg {
         left: 21%;
         width: 250px; } }
+    @media (max-width: 780px) {
+      .fifth .smallBlotchBg {
+        width: 270px;
+        left: 35%; } }
     @media (max-width: 550px) {
       .fifth .smallBlotchBg {
         width: 180px; } }
@@ -340,6 +413,9 @@ footer {
   @media (max-width: 1000px) {
     footer {
       margin-top: 425px; } }
+  @media (max-width: 780px) {
+    footer {
+      margin-top: 600px; } }
   @media (max-width: 550px) {
     footer {
       margin-top: 300px; } }
@@ -365,12 +441,20 @@ footer {
     text-align: center;
     position: relative;
     top: 0px;
-    padding-right: 0px; }
+    padding-right: 0px;
+    font-size: 17px; }
+    @media (max-width: 780px) {
+      footer p {
+        width: 80%;
+        margin: auto;
+        padding-right: 0px;
+        font-size: 15px; } }
     @media (max-width: 550px) {
       footer p {
         width: 80%;
         margin: auto;
-        padding-right: 0px; } }
+        padding-right: 0px;
+        font-size: 15px; } }
   footer a {
     color: black; }
   footer .comments {

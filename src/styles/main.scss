@@ -50,6 +50,10 @@ p{
   height: 100vh;
   transition: all 1s ease;
 
+  @media (max-width: 780px) {
+    height:25vh;
+  }
+
   @media (max-width: 550px) {
     height:25vh;
   }
@@ -66,9 +70,15 @@ p{
       width:30%;
     }
 
+    @media (max-width: 780px) {
+      width:33%;
+      left:67%;
+      top:20%;
+    }
+
     @media (max-width: 550px) {
       width:40%;
-      left:63%;
+      left:65%;
       top:20%;
     }
 
@@ -95,6 +105,12 @@ p{
       left: 40%;
       width: 55%;
       top: 180%;
+    }
+
+    @media (max-width: 780px) {
+      left:50%;
+      width:50%;
+      top:230%;
     }
 
     @media (max-width: 550px) {
@@ -128,9 +144,12 @@ p{
     //border-image-slice: 30;
     //border-image-outset: 15px;
 
-    @media (max-width: 550px) {
+    @media (max-width: 780px) {
       border-left:0px;
       border-right:0px;
+      height:550px;
+      padding-top:100px;
+      padding-bottom:40px;
     }
 
     @media (max-width: 750px) {
@@ -138,11 +157,26 @@ p{
       padding:150px 0px;
     }
 
+    @media (max-width: 550px) {
+      border-left:0px;
+      border-right:0px;
+      padding: 40px 0px;
+      height:550px;
+    }
+
     .darkTopBlotch{
       background: url("../images/black-edge-top.png") repeat-x;
       height: 50px;
       position: relative;
       top: -50px;
+
+      @media (max-width: 780px) {
+        top:-150px;
+      }
+
+      @media (max-width: 550px) {
+        top:-90px;
+      }
     }
 
     p{
@@ -158,6 +192,10 @@ p{
       width:70%;
     }
 
+    @media (max-width: 780px) {
+      width:80%;
+    }
+
     @media (max-width: 550px) {
       width:100%;
     }
@@ -169,6 +207,11 @@ p{
   display: block;
   margin-top: 50px;
   margin-bottom: 20px;
+
+  @media (max-width: 780px) {
+    width:70%;
+    width:40%;
+  }
 
   @media (max-width: 550px) {
     width:70%;
@@ -205,6 +248,11 @@ p{
     margin-left: 10%;
     height: auto;
 
+    @media (max-width: 780px) {
+      width:100%;
+      margin-left:0px;
+    }
+
     @media (max-width: 550px) {
       width:100%;
       margin-left:0px;
@@ -236,6 +284,22 @@ p{
   z-index:11;
   transition: all 1s ease;
 
+  @media (min-width: 667px) {
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: 20%;
+    padding-bottom:240px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-bottom:360px;
+  }
+
+  @media (max-width: 780px) {
+    overflow:hidden;
+    padding-bottom:370px;
+  }
+
   @media (max-width: 550px) {
     overflow:hidden;
   }
@@ -247,25 +311,31 @@ p{
     display: block;
     margin-top: 100px;
 
+    @media (max-width: 780px) {
+      left:0px;
+      margin-top:0px;
+      top:0px;
+      height:790px;
+    }
+
     @media (max-width: 550px) {
       left:-100px;
       margin-top:0px;
+      top:0px;
+      height:600px;
     }
   }
 
   .twelve{
     margin-top: 500px;
-  }
 
-  @media (min-width: 667px) {
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position: 20%;
-    padding-bottom:240px;
-  }
+    @media (max-width: 780px) {
+      margin-top:40px;
+    }
 
-  @media (min-width: 1200px) {
-    padding-bottom:360px;
+    @media (max-width: 550px) {
+      margin-top:40px;
+    }
   }
 
   .columns {
@@ -313,6 +383,15 @@ p{
   @media (min-width: 550px) {
     position: relative;
     bottom: 130px;
+  }
+
+  @media (max-width: 780px) {
+    padding-top:0px;
+    bottom:0px;
+  }
+
+  @media (max-width: 550px) {
+    padding-top:0px;
   }
 
   .logoFg {
@@ -373,6 +452,12 @@ p{
       left: 30%;
       margin-left:0;
     }
+
+    @media (max-width: 780px) {
+      width:80%;
+      left:0%;
+      margin:auto;
+    }
   }
 
   hr {
@@ -417,6 +502,11 @@ p{
     @media (max-width: 1000px) {
       left:21%;
       width:250px;
+    }
+
+    @media (max-width: 780px) {
+      width: 270px;
+      left:35%;
     }
 
     @media (max-width: 550px) {
@@ -488,6 +578,10 @@ footer {
     margin-top:425px;
   }
 
+  @media (max-width: 780px) {
+    margin-top:600px;
+  }
+
   @media (max-width: 550px) {
     margin-top:300px;
   }
@@ -520,12 +614,21 @@ footer {
     position: relative;
     top: 0px;
     padding-right:0px;
+    font-size:17px;
+
+    @media (max-width: 780px) {
+      width: 80%;
+      margin: auto;
+      padding-right: 0px;
+      font-size:15px;
+    }
 
 
     @media (max-width: 550px) {
       width: 80%;
       margin: auto;
       padding-right: 0px;
+      font-size:15px;
     }
   }
 

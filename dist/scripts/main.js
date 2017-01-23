@@ -94,7 +94,7 @@ var scroll = function () {
     }
     var target = $('.artisinalStratContainer');
     var container = $('.secondSection');
-    var targetHeight = target.outerHeight() + 30;
+    var targetHeight = target.outerHeight() + 50;
     var scrollPercent = (window.pageYOffset) / targetHeight;
 
     var blotch = $('.heroBlotch');
