@@ -234,10 +234,6 @@ p{
   @media (max-width: 550px) {
     width:70%;
   }
-
-  @media (max-width: 400px) {
-    width:80%;
-  }
 }
 
 
@@ -627,6 +623,7 @@ footer {
 
   @media (max-width: 550px) {
     margin-top:300px;
+    padding-bottom:80px;
   }
 
   @media (max-width: 400px) {
@@ -675,6 +672,7 @@ footer {
       margin: auto;
       padding-right: 0px;
       font-size:15px;
+      top:0px;
     }
   }
 

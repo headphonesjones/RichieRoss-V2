@@ -168,9 +168,6 @@ p {
   @media (max-width: 550px) {
     .imageHeadline {
       width: 70%; } }
-  @media (max-width: 400px) {
-    .imageHeadline {
-      width: 80%; } }
 
 .dots {
   background-image: url("../images/dots.png");
@@ -451,7 +448,8 @@ footer {
       padding-bottom: 0px; } }
   @media (max-width: 550px) {
     footer {
-      margin-top: 300px; } }
+      margin-top: 300px;
+      padding-bottom: 80px; } }
   @media (max-width: 400px) {
     footer {
       margin-top: 130px; } }
@@ -490,7 +488,8 @@ footer {
         width: 80%;
         margin: auto;
         padding-right: 0px;
-        font-size: 15px; } }
+        font-size: 15px;
+        top: 0px; } }
   footer a {
     color: black; }
   footer .comments {
