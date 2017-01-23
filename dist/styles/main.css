@@ -51,6 +51,10 @@ p {
         width: 33%;
         left: 67%;
         top: 20%; } }
+    @media (max-width: 740px) {
+      .hero .heroLogo {
+        width: 30%;
+        top: 30%; } }
     @media (max-width: 550px) {
       .hero .heroLogo {
         width: 40%;
@@ -80,6 +84,11 @@ p {
         left: 50%;
         width: 50%;
         top: 230%; } }
+    @media (max-width: 740px) {
+      .hero .heroBlotch {
+        left: 50%;
+        width: 50%;
+        top: 350%; } }
     @media (max-width: 550px) {
       .hero .heroBlotch {
         left: 45%;
@@ -106,10 +115,9 @@ p {
         height: 550px;
         padding-top: 100px;
         padding-bottom: 40px; } }
-    @media (max-width: 750px) {
+    @media (max-width: 740px) {
       .secondSection .blackBlotch {
-        width: 100%;
-        padding: 150px 0px; } }
+        height: 500px; } }
     @media (max-width: 550px) {
       .secondSection .blackBlotch {
         border-left: 0px;
@@ -138,6 +146,9 @@ p {
     @media (max-width: 780px) {
       .secondSection .richieImage {
         width: 80%; } }
+    @media (max-width: 740px) {
+      .secondSection .richieImage {
+        width: 70%; } }
     @media (max-width: 550px) {
       .secondSection .richieImage {
         width: 100%; } }
@@ -151,6 +162,9 @@ p {
     .imageHeadline {
       width: 70%;
       width: 40%; } }
+  @media (max-width: 570px) {
+    .imageHeadline {
+      width: 50%; } }
   @media (max-width: 550px) {
     .imageHeadline {
       width: 70%; } }
@@ -215,6 +229,9 @@ p {
     .third {
       overflow: hidden;
       padding-bottom: 370px; } }
+  @media (max-width: 570px) {
+    .third {
+      padding-bottom: 150px; } }
   @media (max-width: 550px) {
     .third {
       overflow: hidden; } }
@@ -230,6 +247,12 @@ p {
         margin-top: 0px;
         top: 0px;
         height: 790px; } }
+    @media (max-width: 740px) {
+      .third .secondBlotch {
+        height: 700px; } }
+    @media (max-width: 570px) {
+      .third .secondBlotch {
+        height: 590px; } }
     @media (max-width: 550px) {
       .third .secondBlotch {
         left: -100px;
@@ -366,6 +389,9 @@ p {
       .fifth .smallBlotchBg {
         width: 270px;
         left: 35%; } }
+    @media (max-width: 570px) {
+      .fifth .smallBlotchBg {
+        width: 190px; } }
     @media (max-width: 550px) {
       .fifth .smallBlotchBg {
         width: 180px; } }
@@ -416,6 +442,9 @@ footer {
   @media (max-width: 780px) {
     footer {
       margin-top: 600px; } }
+  @media (max-width: 740px) {
+    footer {
+      margin-top: 300px; } }
   @media (max-width: 550px) {
     footer {
       margin-top: 300px; } }
