@@ -21,7 +21,6 @@ body{
   padding: 0;
   margin: 0;
   font-family: "freight-sans-pro",sans-serif;
-  //-webkit-transform-style: preserve-3d; This was causing the logo issues in Firefox
   -webkit-overflow-scrolling: touch;
 }
 
@@ -128,11 +127,6 @@ p{
       left:45%;
       width:55%;
       top:230%;
-    }
-
-    &.blotchStick {
-      position:fixed;
-      top:-660px !important;
     }
   }
 }
@@ -275,13 +269,6 @@ p{
 .artisinalStratContainer{
   transition: top 2s linear;
   display: block;
-
-  //&.is_stuck {
-  //  position: fixed !important;
-  //  top: 200px !important;
-  //  width: 1440px !important;
-  //}
-
 }
 
 .artisinalStratContainer2{

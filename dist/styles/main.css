@@ -94,9 +94,6 @@ p {
         left: 45%;
         width: 55%;
         top: 230%; } }
-    .hero .heroBlotch.blotchStick {
-      position: fixed;
-      top: -660px !important; }
 
 .secondSection {
   width: 100vw;

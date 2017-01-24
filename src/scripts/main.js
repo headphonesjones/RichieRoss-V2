@@ -18,7 +18,6 @@ var mobileWidth = 768;
 
 $(document).ready(function(){
     if( $(window).width() <= mobileWidth ) {
-        // code
         $(".richieImage").removeAttr("data-stellar-ratio");
         $(".secondBlotch").removeAttr("data-stellar-ratio");
         $(".heroDots").removeAttr("data-stellar-ratio");
@@ -37,7 +36,6 @@ $(document).ready(function(){
 
         $(".artisinalStratContainer").stick_in_parent({offset_top:200})
             .on("sticky_kit:unstick", function(e) {
-            // $(".heroBlotch").removeClass('blotchStick');
         });
 
 
@@ -131,8 +129,4 @@ var scroll = function () {
     if (scrollPercent >= 0) {
         target.css('opacity', Math.sin(scrollPercent * (Math.PI/2.0)));
     }
-
-    // if (blotchOffset <= 660){
-    //     blotch.addClass('blotchStick');
-    // }
 };
