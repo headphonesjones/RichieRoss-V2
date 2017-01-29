@@ -159,7 +159,7 @@ p{
       border-left:0px;
       border-right:0px;
       padding: 40px 0px;
-      height:550px;
+      height:750px;
     }
 
     .darkTopBlotch{
@@ -262,6 +262,8 @@ p{
     @media (max-width: 550px) {
       width:100%;
       margin-left:0px;
+      padding-top: 200px;
+      padding-bottom: 200px;
     }
   }
 }
@@ -305,6 +307,7 @@ p{
 
   @media (max-width: 550px) {
     overflow:hidden;
+    padding-bottom: 360px;
   }
 
   .secondBlotch{
@@ -333,7 +336,7 @@ p{
       left:-100px;
       margin-top:0px;
       top:0px;
-      height:600px;
+      height:800px;
     }
   }
 
@@ -345,7 +348,7 @@ p{
     }
 
     @media (max-width: 550px) {
-      margin-top:40px;
+      margin-top:140px;
     }
   }
 
@@ -403,6 +406,7 @@ p{
 
   @media (max-width: 550px) {
     padding-top:0px;
+    padding-bottom:250px;
   }
 
   .logoFg {
@@ -483,6 +487,13 @@ p{
 
   .last {
     margin-top:24px;
+  }
+
+  .imageHeadline{
+
+    @media screen and (max-width: 550px){
+      width: 100%;
+    }
   }
 
 }
@@ -604,7 +615,7 @@ footer {
 
   @media (max-width: 550px) {
     margin-top:300px;
-    padding-bottom:80px;
+    padding-bottom:30px;
   }
 
   @media (max-width: 400px) {

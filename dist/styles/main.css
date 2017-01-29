@@ -120,7 +120,7 @@ p {
         border-left: 0px;
         border-right: 0px;
         padding: 40px 0px;
-        height: 550px; } }
+        height: 750px; } }
     .secondSection .blackBlotch .darkTopBlotch {
       background: url("../images/black-edge-top.png") repeat-x;
       height: 50px;
@@ -195,7 +195,9 @@ p {
     @media (max-width: 550px) {
       .thirdSection .mainGif {
         width: 100%;
-        margin-left: 0px; } }
+        margin-left: 0px;
+        padding-top: 200px;
+        padding-bottom: 200px; } }
 
 .artisinalStratContainer {
   -webkit-transition: top 2s linear;
@@ -231,7 +233,8 @@ p {
       padding-bottom: 150px; } }
   @media (max-width: 550px) {
     .third {
-      overflow: hidden; } }
+      overflow: hidden;
+      padding-bottom: 360px; } }
   .third .secondBlotch {
     position: absolute;
     top: 200px;
@@ -255,7 +258,7 @@ p {
         left: -100px;
         margin-top: 0px;
         top: 0px;
-        height: 600px; } }
+        height: 800px; } }
   .third .twelve {
     margin-top: 500px; }
     @media (max-width: 780px) {
@@ -263,7 +266,7 @@ p {
         margin-top: 40px; } }
     @media (max-width: 550px) {
       .third .twelve {
-        margin-top: 40px; } }
+        margin-top: 140px; } }
   .third .columns {
     display: block !important;
     opacity: 1;
@@ -302,7 +305,8 @@ p {
       bottom: 0px; } }
   @media (max-width: 550px) {
     .fourth {
-      padding-top: 0px; } }
+      padding-top: 0px;
+      padding-bottom: 250px; } }
   .fourth .logoFg {
     display: none;
     opacity: 0;
@@ -360,6 +364,9 @@ p {
     margin-bottom: 0px; }
   .fourth .last {
     margin-top: 24px; }
+  @media screen and (max-width: 550px) {
+    .fourth .imageHeadline {
+      width: 100%; } }
 
 .fifth {
   text-align: center;
@@ -446,7 +453,7 @@ footer {
   @media (max-width: 550px) {
     footer {
       margin-top: 300px;
-      padding-bottom: 80px; } }
+      padding-bottom: 30px; } }
   @media (max-width: 400px) {
     footer {
       margin-top: 130px; } }
