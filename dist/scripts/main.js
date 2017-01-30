@@ -120,7 +120,7 @@ var scroll = function () {
     }
     var target = $('.artisinalStratContainer');
     var container = $('.secondSection');
-    var targetHeight = target.outerHeight();
+    var targetHeight = target.outerHeight() + 70;
     var scrollPercent = (window.pageYOffset) / targetHeight;
 
     var blotch = $('.heroBlotch');
