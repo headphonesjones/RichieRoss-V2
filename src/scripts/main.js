@@ -103,14 +103,26 @@ $(window).resize(function() {
 
 
 var scroll = function () {
+    var logoFadeDistance = $(".darkTopBlotch").offset().top;
+    var logoFadeForFooter = $(".fourth").offset().top;
     var distance = $('.third').offset().top,
         $window = $(window);
 
     if ( $(window).scrollTop() >= distance + 650 ) {
         $(".mainGif").fadeOut(300);
     }
+    else if ($(window).scrollTop() > logoFadeDistance - 200){
+        $(".heroLogo").fadeOut(300);
+        $(".richieCaption").fadeOut(300);
+    }
     else{
         $(".mainGif").fadeIn(300);
+        $(".heroLogo").fadeIn(300);
+        $(".richieCaption").fadeIn(300);
+    }
+
+    if($(window).scrollTop() > logoFadeForFooter + 600){
+        $(".heroLogo").fadeIn(600);
     }
     if ( $(window).scrollTop() >= distance ) {
         $(".heroDots").hide();
