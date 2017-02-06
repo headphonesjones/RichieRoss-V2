@@ -31,21 +31,21 @@ p {
       height: 25vh; } }
   @media (max-width: 550px) {
     .hero {
-      height: 25vh; } }
+      height: 45vh; } }
   .hero .richieCaption {
-    display: none; }
+    display: none !important; }
     .hero .richieCaption p {
       color: #000000;
       line-height: 0; }
     @media screen and (max-width: 550px) {
       .hero .richieCaption {
-        display: block;
+        display: block !important;
         width: 250px;
         text-align: center;
         z-index: 20;
         position: absolute;
-        top: 72vh;
-        right: -22px;
+        top: 90vh;
+        right: 10px;
         z-index: 100; } }
   .hero .heroLogo {
     width: 20%;
@@ -73,8 +73,8 @@ p {
     @media (max-width: 550px) {
       .hero .heroLogo {
         width: 40%;
-        left: 65%;
-        top: 20%;
+        left: 45%;
+        top: 35%;
         z-index: 1; } }
   .hero .heroDots {
     position: absolute;
@@ -107,9 +107,9 @@ p {
         top: 350%; } }
     @media (max-width: 550px) {
       .hero .heroBlotch {
-        left: 45%;
+        left: 35%;
         width: 55%;
-        top: 230%; } }
+        top: 170%; } }
 
 .secondSection {
   width: 100vw;
@@ -128,6 +128,14 @@ p {
       .secondSection .blackBlotch .richieCaption p {
         color: #fc9378;
         line-height: 0; }
+      @media screen and (max-width: 768px) {
+        .secondSection .blackBlotch .richieCaption {
+          position: relative;
+          top: -100px; } }
+      @media screen and (max-width: 667px) {
+        .secondSection .blackBlotch .richieCaption {
+          position: relative;
+          top: -100px; } }
       @media screen and (max-width: 550px) {
         .secondSection .blackBlotch .richieCaption {
           display: none; } }
@@ -151,7 +159,7 @@ p {
         border-left: 0px;
         border-right: 0px;
         padding: 40px 0px;
-        height: 750px; } }
+        height: 650px; } }
     .secondSection .blackBlotch .darkTopBlotch {
       background: url("../images/black-edge-top.png") repeat-x;
       height: 50px;
@@ -162,7 +170,7 @@ p {
           top: -150px; } }
       @media (max-width: 550px) {
         .secondSection .blackBlotch .darkTopBlotch {
-          top: -90px; } }
+          top: -80px; } }
     .secondSection .blackBlotch p {
       color: #fc9378; }
   .secondSection .richieImage {
@@ -211,8 +219,8 @@ p {
       .thirdSection .mainGif {
         width: 100%;
         margin-left: 0px;
-        padding-top: 200px;
-        padding-bottom: 200px; } }
+        padding-top: 100px;
+        padding-bottom: 160px; } }
 
 .artisinalStratContainer {
   -webkit-transition: top 2s linear;
@@ -235,6 +243,9 @@ p {
     display: block;
     margin-top: 50px;
     margin-bottom: 20px; }
+    @media (max-width: 550px) {
+      .third .imageHeadline {
+        width: 55%; } }
   @media (min-width: 667px) {
     .third {
       background-size: contain;
@@ -320,6 +331,9 @@ p {
     display: block;
     margin-top: 50px;
     margin-bottom: 20px; }
+    @media screen and (max-width: 550px) {
+      .fourth .imageHeadline {
+        width: 80%; } }
   @media (min-width: 550px) {
     .fourth {
       position: relative;
@@ -331,7 +345,8 @@ p {
   @media (max-width: 550px) {
     .fourth {
       padding-top: 0px;
-      padding-bottom: 250px; } }
+      padding-bottom: 250px;
+      background-color: #e2e1db; } }
   .fourth .logoFg {
     display: none;
     opacity: 0;
@@ -389,9 +404,6 @@ p {
     margin-bottom: 0px; }
   .fourth .last {
     margin-top: 24px; }
-  @media screen and (max-width: 550px) {
-    .fourth .imageHeadline {
-      width: 100%; } }
 
 .fifth {
   text-align: center;
@@ -423,7 +435,9 @@ p {
         width: 190px; } }
     @media (max-width: 550px) {
       .fifth .smallBlotchBg {
-        width: 180px; } }
+        width: 180px;
+        left: 15%;
+        top: 310px; } }
     @media (max-width: 400px) {
       .fifth .smallBlotchBg {
         width: 150px; } }
@@ -530,3 +544,5 @@ footer {
     position: relative;
     top: -5px;
     text-decoration: none; }
+    footer .comments:hover {
+      color: #fb6b46; }

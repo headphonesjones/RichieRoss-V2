@@ -54,11 +54,11 @@ p{
   }
 
   @media (max-width: 550px) {
-    height:25vh;
+    height:45vh;
   }
 
   .richieCaption{
-    display: none;
+    display: none !important;
 
     p {
       color: $black;
@@ -66,13 +66,13 @@ p{
     }
 
     @media screen and (max-width: 550px){
-      display: block;
+      display: block !important;
       width: 250px;
       text-align: center;
       z-index: 20;
       position: absolute;
-      top: 72vh;
-      right: -22px;
+      top: 90vh;
+      right: 10px;
       z-index: 100;
     }
   }
@@ -102,8 +102,8 @@ p{
 
     @media (max-width: 550px) {
       width:40%;
-      left:65%;
-      top:20%;
+      left:45%;
+      top:35%;
       z-index: 1;
     }
 
@@ -145,9 +145,9 @@ p{
     }
 
     @media (max-width: 550px) {
-      left:45%;
+      left:35%;
       width:55%;
-      top:230%;
+      top:170%;
     }
   }
 }
@@ -172,6 +172,16 @@ p{
       p {
         color: $blotchColor;
         line-height: 0;
+      }
+
+      @media screen and (max-width: 768px){
+        position: relative;
+        top: -100px;
+      }
+
+      @media screen and (max-width: 667px){
+        position: relative;
+        top: -100px;
       }
 
       @media screen and (max-width: 550px){
@@ -214,7 +224,7 @@ p{
       border-left:0px;
       border-right:0px;
       padding: 40px 0px;
-      height:750px;
+      height:650px;
     }
 
     .darkTopBlotch{
@@ -228,7 +238,7 @@ p{
       }
 
       @media (max-width: 550px) {
-        top:-90px;
+        top:-80px;
       }
     }
 
@@ -298,8 +308,8 @@ p{
     @media (max-width: 550px) {
       width:100%;
       margin-left:0px;
-      padding-top: 200px;
-      padding-bottom: 200px;
+      padding-top: 100px;
+      padding-bottom: 160px;
     }
   }
 }
@@ -335,9 +345,9 @@ p{
     //  width:50%;
     //}
     //
-    //@media (max-width: 550px) {
-    //  width:70%;
-    //}
+    @media (max-width: 550px) {
+    width:55%;
+  }
   }
 
   @media (min-width: 667px) {
@@ -455,17 +465,9 @@ p{
     margin-top: 50px;
     margin-bottom: 20px;
 
-    //@media (max-width: 780px) {
-    //  width:40%;
-    //}
-    //
-    //@media (max-width: 570px) {
-    //  width:50%;
-    //}
-    //
-    //@media (max-width: 550px) {
-    //  width:70%;
-    //}
+    @media screen and (max-width: 550px) {
+      width:80%;
+    }
   }
 
   @media (min-width: 550px) {
@@ -481,6 +483,7 @@ p{
   @media (max-width: 550px) {
     padding-top:0px;
     padding-bottom:250px;
+    background-color: $lightGray;
   }
 
   .logoFg {
@@ -563,12 +566,6 @@ p{
     margin-top:24px;
   }
 
-  .imageHeadline{
-
-    @media screen and (max-width: 550px){
-      width: 100%;
-    }
-  }
 
 }
 
@@ -611,6 +608,8 @@ p{
 
     @media (max-width: 550px) {
       width: 180px;
+      left:15%;
+      top: 310px;
     }
 
     @media (max-width: 400px) {
@@ -756,5 +755,9 @@ footer {
     position: relative;
     top: -5px;
     text-decoration:none;
+
+    &:hover{
+      color: darken($blotchColor, 10%);
+    }
   }
 }
